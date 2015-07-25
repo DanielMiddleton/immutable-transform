@@ -1,0 +1,34 @@
+{
+  "name": "immutable-transform",
+  "version": "0.1.0",
+  "description": "Takes an immutable collection, a matcher function, and a transformer function, and applies the transformer function to every entry in the collection which returns true for the matcher function, returning a new immutable collection with the results",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-file index.js",
+    "build-test": "rm -f test/test.js && babel test --out-file test/test.js",
+    "test": "npm run build && npm run build-test && babel-node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielMiddleton/immutable-transform.git"
+  },
+  "keywords": [
+    "immutable",
+    "transform",
+    "deep map",
+    "deep transform",
+    "collections"
+  ],
+  "author": "Daniel Middleton",
+  "bugs": {
+    "url": "https://github.com/DanielMiddleton/immutable-transform/issues"
+  },
+  "homepage": "https://github.com/DanielMiddleton/immutable-transform#readme",
+  "license": "MIT",
+  "dependencies": {
+    "immutable": "^3.7.4"
+  },
+  "devDependencies": {
+    "tape": "^4.0.1"
+  }
+}
